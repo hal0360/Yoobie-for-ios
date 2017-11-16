@@ -1,25 +1,28 @@
 //
-//  ViewController.swift
+//  ProfileController.swift
 //  Yoobie
 //
-//  Created by Ron Lu on 9/11/17.
+//  Created by Ron Lu on 10/11/17.
 //  Copyright © 2017 Udenconstruction. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class ProfileController: RootController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+         index = 1
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("profile appeared")
+    }
 
 }
-
